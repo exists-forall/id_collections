@@ -1,0 +1,25 @@
+[package]
+name = "id_collections"
+version = "1.0.0"
+edition = "2021"
+
+authors = ["William Brandon"]
+repository = "https://github.com/exists-forall/id_collections"
+license = "MIT"
+categories = ["data-structures", "rust-patterns"]
+keywords = ["id", "index", "newtype", "vec", "map"]
+description = "Index-oriented programming in Rust"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[workspace]
+members = ["id_collections_derive"]
+
+[dependencies]
+num-traits = "0.2"
+serde = { version = "1.0", features = ["derive"], optional = true }
+id_collections_derive = { path = "./id_collections_derive" }
+
+[dev-dependencies]
+# for testing serde support:
+serde_json = "1.0"

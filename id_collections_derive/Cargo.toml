@@ -1,0 +1,21 @@
+[package]
+name = "id_collections_derive"
+version = "0.1.0"
+edition = "2021"
+
+authors = ["William Brandon"]
+repository = "https://github.com/exists-forall/id_collections"
+license = "MIT"
+description = "Procedural macros for the 'id_collections' crate"
+
+[lib]
+proc-macro = true
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+proc-macro2 = "1.0"
+syn = "1.0"
+quote = "1.0"
+proc-macro-crate = "1.1"
+
