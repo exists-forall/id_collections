@@ -18,7 +18,7 @@ members = ["id_collections_derive"]
 [dependencies]
 num-traits = "0.2"
 serde = { version = "1.0", features = ["derive"], optional = true }
-id_collections_derive = { path = "./id_collections_derive" }
+id_collections_derive = { path = "./id_collections_derive", version = "0.1.0" }
 
 [dev-dependencies]
 # for testing serde support:
