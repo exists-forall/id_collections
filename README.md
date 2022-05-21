@@ -1,5 +1,11 @@
 # `id_collections`: Index-Oriented Programming in Rust
 
+**Download:** [crates.io/crates/id_collections](https://crates.io/crates/id_collections)
+
+**Docs:** [docs.rs/id_collections](https://docs.rs/id_collections)
+
+---
+
 In some Rust applications, one defines custom wrapper types (sometimes called ["newtypes"](https://doc.rust-lang.org/rust-by-example/generics/new_types.html)) around integer types, in order to better communicate intent and to catch mistakes related to mixing up integer values with different meanings. For example, one might define two different types representing "user ids" and "group ids":
 
 ```rust
