@@ -1,10 +1,10 @@
 //! Index-oriented programming in Rust.
 //!
-//! In some Rust applications, one defines custom wrapper types (sometimes called
-//! ["newtypes"](https://doc.rust-lang.org/rust-by-example/generics/new_types.html)) around integer
-//! types, in order to better communicate intent and to catch mistakes related to mixing up integer
-//! values with different meanings. For example, one might define two different types representing
-//! "user ids" and "group ids":
+//! It is common in Rust to define custom wrapper types (sometimes called ["newtypes"](
+//! https://doc.rust-lang.org/rust-by-example/generics/new_types.html)) around integer types, in
+//! order to better communicate the intended meaning of those types, and to catch mistakes arising
+//! from mixing up integer values with different meanings. For example, one might define two
+//! different types representing "user ids" and "group ids":
 //!
 //! ```
 //! struct UserId(u32);
